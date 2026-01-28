@@ -3,29 +3,29 @@ import React from 'react';
 export default function BrandPhilosophySection() {
   const principles = [
     {
-      emoji: '🏃',
+      emoji: '1',
       title: '아이가 먼저 움직이도록',
       description: '명령과 지시가 아닌, 아이의 자발성을 존중합니다',
     },
     {
-      emoji: '😌',
+      emoji: '2',
       title: '부모에게 부담이 되지 않도록',
       description: '몇 분의 시간으로도 의미 있는 상호작용이 가능합니다',
     },
     {
-      emoji: '🎨',
+      emoji: '3',
       title: '놀이가 훈련처럼 느껴지지 않도록',
       description: '학습이 아닌 진정한 놀이의 기쁨을 경험하게 합니다',
     },
     {
-      emoji: '⚖️',
+      emoji: '4',
       title: '기록은 남기되, 몰입은 방해하지 않도록',
       description: '성장을 추적하되, 그것이 놀이의 방해가 되지 않도록 합니다',
     },
   ];
 
   return (
-    <section className="section-padding bg-gradient-to-b from-white to-accent-50">
+    <section className="section-padding bg-gradient-to-b from-white to-accent-200">
       <div className="section-container">
         <div className="max-w-4xl mx-auto">
           {/* Section Title */}

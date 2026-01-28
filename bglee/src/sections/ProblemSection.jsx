@@ -15,7 +15,7 @@ export default function ProblemSection() {
             {/* Problem 1 */}
             <div className="card p-6 sm:p-8 space-y-4">
               <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center text-2xl">
-                🤔
+                1
               </div>
               <h3 className="text-h4 text-neutral-900">
                 막막한 부모의 고민
@@ -28,7 +28,7 @@ export default function ProblemSection() {
             {/* Problem 2 */}
             <div className="card p-6 sm:p-8 space-y-4">
               <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center text-2xl">
-                🧩
+                2
               </div>
               <h3 className="text-h4 text-neutral-900">
                 도구와 방법의 불일치
@@ -49,7 +49,8 @@ export default function ProblemSection() {
           </div>
 
           {/* Expert Quote */}
-          <div className="bg-gradient-to-r from-primary-50 to-secondary-50 border-l-4 border-primary-500 rounded-lg p-8 sm:p-10">
+          <div className="bg-gradient-to-r from-primary-50 to-secondary-50
+           border-l-4 border-primary-100 rounded-lg p-8 sm:p-10">
             <div className="space-y-4">
               <p className="text-lg sm:text-xl text-neutral-900 italic font-medium">
                 "부모가 안 하는 게 아니라, 구체적인 방법이 없어서 못 이어가는 경우가 대부분입니다."

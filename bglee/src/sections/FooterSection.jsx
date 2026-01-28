@@ -95,7 +95,7 @@ export default function FooterSection() {
 
         {/* Legal Disclaimer */}
         <div className="bg-neutral-800 rounded-lg p-6 sm:p-8 mb-12 sm:mb-16">
-          <h4 className="font-semibold text-white text-sm mb-4">⚠️ 법적 공지</h4>
+          <h4 className="font-semibold text-white text-sm mb-4"> 법적 공지</h4>
           <p className="text-sm text-neutral-300 leading-relaxed">
             Bglee는 의료기기나 치료 서비스를 대체하지 않으며,
             언어재활을 보완하기 위한 가정용 언어 놀이 시스템입니다.
@@ -110,11 +110,11 @@ export default function FooterSection() {
           <div className="grid sm:grid-cols-3 gap-6 text-sm">
             <div>
               <p className="text-neutral-400">📧 Email</p>
-              <p className="text-neutral-200 font-medium">hello@bglee.kr</p>
+              <p className="text-neutral-200 font-medium">exionstudio@gmail.com</p>
             </div>
             <div>
               <p className="text-neutral-400">🌐 Website</p>
-              <p className="text-neutral-200 font-medium">www.bglee.kr</p>
+              <p className="text-neutral-200 font-medium">www.bglee.vercel.app</p>
             </div>
             <div>
               <p className="text-neutral-400">📱 Follow Us</p>

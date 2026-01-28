@@ -9,11 +9,11 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="min-h-screen bg-gradient-to-b from-primary-50 via-white to-accent-50 flex items-center py-12 sm:py-16">
+    <section className="min-h-screen bg-gradient-to-b from-primary-200 via-neutral-50 to-accent-200 flex items-center py-12 sm:py-16">
       <div className="section-container w-full">
         {/* Logo */}
         <div className="mb-8 sm:mb-12">
-          <Logo className="h-10 sm:h-12" />
+          <Logo className="h-16 sm:h-20" />
         </div>
 
         {/* Main Content */}
@@ -23,7 +23,7 @@ export default function HeroSection() {
             {/* Main Heading */}
             <div className="space-y-3 sm:space-y-4">
               <h1 className="text-h1 text-neutral-900 leading-tight">
-                집에서도 이어지는 언어 놀이,{' '}
+                집에서도 이어지는 <br />언어 놀이,{' '}
                 <span className="text-primary-500">Bglee</span>
               </h1>
               <p className="text-lg sm:text-xl text-neutral-600 leading-relaxed max-w-lg">
@@ -40,19 +40,19 @@ export default function HeroSection() {
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 pt-6 sm:pt-8 border-t border-neutral-200">
               <div>
                 <p className="text-xs sm:text-sm text-neutral-600">
-                  🎯 <span className="font-semibold text-neutral-700">쉬운 시작</span>
+                  ✓  <span className="font-semibold text-neutral-700">쉬운 시작</span>
                 </p>
                 <p className="text-xs text-neutral-500 mt-1">별도의 교구 없이 시작 가능</p>
               </div>
               <div>
                 <p className="text-xs sm:text-sm text-neutral-600">
-                  ⏱️ <span className="font-semibold text-neutral-700">짧은 시간</span>
+                  ✓  <span className="font-semibold text-neutral-700">짧은 시간</span>
                 </p>
                 <p className="text-xs text-neutral-500 mt-1">하루 5~10분으로 충분</p>
               </div>
               <div>
                 <p className="text-xs sm:text-sm text-neutral-600">
-                  📊 <span className="font-semibold text-neutral-700">명확한 기록</span>
+                  ✓  <span className="font-semibold text-neutral-700">명확한 기록</span>
                 </p>
                 <p className="text-xs text-neutral-500 mt-1">부모앱으로 진행상황 확인</p>
               </div>
@@ -61,16 +61,26 @@ export default function HeroSection() {
 
           {/* Right Visual */}
           <div className="hidden lg:flex justify-center items-center animate-fade-in">
-            <div className="relative w-80 h-80">
-              {/* Decorative background */}
-              <div className="absolute inset-0 bg-gradient-to-br from-primary-100 to-secondary-100 rounded-3xl opacity-50" />
-              <div className="absolute inset-4 bg-white rounded-2xl shadow-xl flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-6xl mb-4">👶</div>
-                  <div className="text-2xl font-bold text-primary-500 mb-2">
+            <div className="relative">
+              {/* Floating blur background */}
+              <div className="absolute -inset-8 bg-gradient-to-br from-primary-200/40 via-secondary-200/20 to-accent-200/40 rounded-full blur-3xl opacity-60" />
+
+              {/* Main visual container */}
+              <div className="relative flex flex-col items-center justify-center">
+                {/* Image with subtle glow */}
+                <div className="relative mb-6">
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary-300/30 to-secondary-300/30 rounded-full blur-2xl" />
+                  <div className="relative w-56 h-56 rounded-full flex items-center justify-center backdrop-blur-sm bg-white/30 border border-white/50 shadow-2xl">
+                    <img src="/dog.svg" alt="Bglee" className="w-48 h-48 object-contain" />
+                  </div>
+                </div>
+
+                {/* Text below image */}
+                <div className="text-center space-y-2">
+                  <div className="text-3xl font-bold text-primary-500">
                     Bglee
                   </div>
-                  <p className="text-sm text-neutral-600 px-4">
+                  <p className="text-sm text-neutral-700 font-medium max-w-xs">
                     놀이로 시작하는 언어 발달
                   </p>
                 </div>

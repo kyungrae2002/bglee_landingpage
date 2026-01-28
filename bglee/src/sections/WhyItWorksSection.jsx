@@ -3,17 +3,17 @@ import React from 'react';
 export default function WhyItWorksSection() {
   const reasons = [
     {
-      emoji: '🚶',
+      emoji: '',
       title: '아이는 직접 움직입니다',
       description: '앱 속 가상 세계가 아닌, 실제 물리적 공간에서 움직이며 학습합니다',
     },
     {
-      emoji: '🤲',
+      emoji: '',
       title: '실제 장난감을 만집니다',
       description: '손으로 직접 만지고 느끼며 감각을 자극하는 경험',
     },
     {
-      emoji: '💭',
+      emoji: '',
       title: '말은 놀이 중간에 나옵니다',
       description: '의도적인 학습이 아닌, 자연스러운 상황 속의 언어 발달',
     },

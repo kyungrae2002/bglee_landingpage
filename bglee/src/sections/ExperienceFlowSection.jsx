@@ -4,28 +4,24 @@ export default function ExperienceFlowSection() {
   const steps = [
     {
       number: 1,
-      emoji: '🔍',
       title: '찾기',
       description: '앱이 특정 장난감을 제시하면 아이가 방 안에서 직접 찾습니다',
       color: 'primary',
     },
     {
       number: 2,
-      emoji: '📱',
       title: '태그',
       description: '찾은 장난감을 태블릿에 톡 → 즉각적인 칭찬과 피드백',
       color: 'secondary',
     },
     {
       number: 3,
-      emoji: '💬',
       title: '문장',
       description: '"전화를 ____" → 동사를 고르며 문장을 완성',
       color: 'accent',
     },
     {
       number: 4,
-      emoji: '🎭',
       title: '상황극',
       description: '"인형한테 전화해볼까?" → 장난감으로 짧은 역할놀이',
       color: 'secondary',
@@ -94,7 +90,7 @@ export default function ExperienceFlowSection() {
         {/* Emphasis Section */}
         <div className="bg-gradient-to-r from-primary-50 to-secondary-50 rounded-2xl p-8 sm:p-10 text-center">
           <p className="text-2xl sm:text-3xl font-bold text-neutral-900 mb-4">
-            📌 한 세트 2~3분,<br className="sm:hidden" /> 하루 한두 번이면 충분합니다
+             한 세트 2~3분,<br className="sm:hidden" /> 하루 한두 번이면 충분합니다
           </p>
           <p className="text-base sm:text-lg text-neutral-700 max-w-2xl mx-auto">
             바쁜 부모님의 일상 속에서도 자연스럽게 함께할 수 있는 언어 자극입니다

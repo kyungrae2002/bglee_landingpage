@@ -3,29 +3,29 @@ import React from 'react';
 export default function ForParentsSection() {
   const features = [
     {
-      emoji: '📊',
+      emoji:'1',
       title: '오늘 몇 번 놀았는지',
       description: '매일의 활동량이 한눈에 보입니다',
     },
     {
-      emoji: '🎯',
+      emoji:'2',
       title: '어떤 장난감을 사용했는지',
       description: '아이가 관심 있는 것들을 파악할 수 있습니다',
     },
     {
-      emoji: '💬',
+      emoji:'3',
       title: '새로 만든 문장 수',
       description: '아이의 언어 표현 범위가 넓어지는 과정이 보입니다',
     },
     {
-      emoji: '📈',
+      emoji:'4',
       title: '발화 시도와 변화',
       description: '말하려는 노력이 어떻게 성장하는지 기록됩니다',
     },
   ];
 
   return (
-    <section className="section-padding bg-gradient-to-b from-white to-secondary-50">
+    <section className="section-padding bg-gradient-to-b from-white to-secondary-200">
       <div className="section-container">
         <div className="max-w-4xl mx-auto">
           {/* Section Title */}

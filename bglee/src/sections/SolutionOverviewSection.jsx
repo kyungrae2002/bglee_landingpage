@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function SolutionOverviewSection() {
   return (
-    <section className="section-padding bg-gradient-to-b from-white to-secondary-50">
+    <section className="section-padding bg-gradient-to-b from-white to-secondary-200">
       <div className="section-container">
         <div className="max-w-3xl mx-auto">
           {/* Section Title */}

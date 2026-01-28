@@ -4,15 +4,15 @@ import BetaSignupForm from '../components/BetaSignupForm';
 export default function CTASection() {
   const targetAudience = [
     {
-      emoji: '🤔',
+      emoji: '✓',
       text: '가정에서 언어 놀이가 막막한 분',
     },
     {
-      emoji: '🎯',
+      emoji: '✓',
       text: '치료 효과를 집에서도 이어가고 싶은 분',
     },
     {
-      emoji: '⏱️',
+      emoji: '✓',
       text: '짧고 명확한 놀이 루틴이 필요한 가정',
     },
   ];

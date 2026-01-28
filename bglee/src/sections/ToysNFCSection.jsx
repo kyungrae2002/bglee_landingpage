@@ -17,7 +17,7 @@ export default function ToysNFCSection() {
           <div className="space-y-6 sm:space-y-8 mb-12 sm:mb-16">
             {/* Feature 1 */}
             <div className="flex gap-4 sm:gap-6 card p-6 sm:p-8">
-              <div className="flex-shrink-0 text-4xl">🎨</div>
+              <div className="flex-shrink-0 text-4xl">1</div>
               <div className="flex-1">
                 <h3 className="text-h4 text-neutral-900 mb-2">
                   집에 있는 장난감 그대로 사용
@@ -30,7 +30,7 @@ export default function ToysNFCSection() {
 
             {/* Feature 2 */}
             <div className="flex gap-4 sm:gap-6 card p-6 sm:p-8">
-              <div className="flex-shrink-0 text-4xl">📍</div>
+              <div className="flex-shrink-0 text-4xl">2</div>
               <div className="flex-1">
                 <h3 className="text-h4 text-neutral-900 mb-2">
                   NFC 스티커 부착
@@ -43,7 +43,7 @@ export default function ToysNFCSection() {
 
             {/* Feature 3 */}
             <div className="flex gap-4 sm:gap-6 card p-6 sm:p-8">
-              <div className="flex-shrink-0 text-4xl">🎭</div>
+              <div className="flex-shrink-0 text-4xl">3</div>
               <div className="flex-1">
                 <h3 className="text-h4 text-neutral-900 mb-2">
                   일반 장난감이 곧 언어 놀이 도구가 됩니다

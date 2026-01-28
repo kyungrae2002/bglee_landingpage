@@ -19,7 +19,7 @@ export default function ContinuityWithTherapySection() {
 
               {/* Point 1 */}
               <div className="flex gap-4">
-                <div className="flex-shrink-0 text-3xl">🤝</div>
+                <div className="flex-shrink-0 text-3xl">1</div>
                 <div>
                   <h4 className="text-h4 text-neutral-900 mb-2">
                     센터 치료를 보완하는 가정용 도구
@@ -32,7 +32,7 @@ export default function ContinuityWithTherapySection() {
 
               {/* Point 2 */}
               <div className="flex gap-4">
-                <div className="flex-shrink-0 text-3xl">🔄</div>
+                <div className="flex-shrink-0 text-3xl">2</div>
                 <div>
                   <h4 className="text-h4 text-neutral-900 mb-2">
                     치료와 치료 사이의 공백 채우기
