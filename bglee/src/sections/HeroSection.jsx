@@ -58,35 +58,7 @@ export default function HeroSection() {
               </div>
             </div>
           </div>
-
-          {/* Right Visual */}
-          <div className="hidden lg:flex justify-center items-center animate-fade-in">
-            <div className="relative">
-              {/* Floating blur background */}
-              <div className="absolute -inset-8 bg-gradient-to-br from-primary-200/40 via-secondary-200/20 to-accent-200/40 rounded-full blur-3xl opacity-60" />
-
-              {/* Main visual container */}
-              <div className="relative flex flex-col items-center justify-center">
-                {/* Image with subtle glow */}
-                <div className="relative mb-6">
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary-300/30 to-secondary-300/30 blur-3xl opacity-40" />
-                  <div className="relative">
-                    <img src="/dog.svg" alt="Bglee" className="w-48 h-48 object-contain" />
-                  </div>
-                </div>
-
-                {/* Text below image */}
-                <div className="text-center space-y-2">
-                  <div className="text-3xl font-bold text-primary-500">
-                    Bglee
-                  </div>
-                  <p className="text-sm text-neutral-700 font-medium max-w-xs">
-                    놀이로 시작하는 언어 발달
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+          
         </div>
 
         {/* Scroll Indicator */}
