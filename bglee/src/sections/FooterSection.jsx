@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../components/Logo';
+import Logo1 from '../components/Logo1';
 
 export default function FooterSection() {
   const currentYear = new Date().getFullYear();
@@ -11,7 +11,7 @@ export default function FooterSection() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-6 mb-12 sm:mb-16">
           {/* Brand Section */}
           <div className="space-y-4">
-            <Logo className="h-8 sm:h-10 brightness-0 invert" />
+            <Logo1 className="h-8 sm:h-10 brightness-0 invert" />
             <p className="text-sm text-neutral-400">
               아이들의 언어 발달을 지원하는 가정용 놀이 시스템
             </p>
