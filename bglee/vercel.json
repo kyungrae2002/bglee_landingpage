@@ -1,9 +1,10 @@
 {
-  "buildCommand": "npm run build",
+  "buildCommand": "npm install && npm run build",
   "devCommand": "npm run dev",
-  "installCommand": "npm install",
+  "installCommand": "npm install --no-frozen-lockfile",
   "framework": "vite",
   "outputDirectory": "dist",
+  "nodeVersion": "20.x",
   "env": {
     "VITE_FIREBASE_API_KEY": "@vite_firebase_api_key",
     "VITE_FIREBASE_AUTH_DOMAIN": "@vite_firebase_auth_domain",
