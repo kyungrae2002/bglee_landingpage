@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { initializeGA4 } from './services/analytics';
 
 // Import all sections
@@ -14,8 +15,11 @@ import BrandPhilosophySection from './sections/BrandPhilosophySection';
 import CTASection from './sections/CTASection';
 import FooterSection from './sections/FooterSection';
 
-function App() {
-  // Initialize GA4 on component mount
+// Import admin dashboard
+import ExionDashboard from './pages/ExionDashboard';
+
+// Home Page Component
+function HomePage() {
   useEffect(() => {
     initializeGA4();
 
@@ -124,6 +128,23 @@ function BackToTopButton() {
         </button>
       )}
     </>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        {/* Main landing page */}
+        <Route path="/" element={<HomePage />} />
+
+        {/* Secret admin dashboard */}
+        <Route path="/exion" element={<ExionDashboard />} />
+
+        {/* 404 - Redirect to home */}
+        <Route path="*" element={<HomePage />} />
+      </Routes>
+    </Router>
   );
 }
 

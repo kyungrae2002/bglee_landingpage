@@ -1,6 +1,6 @@
 // Firebase Configuration and Initialization
 import { initializeApp } from 'firebase/app';
-import { getDatabase, ref, push, query, orderByChild, limitToLast, get } from 'firebase/database';
+import { getFirestore } from 'firebase/firestore';
 
 // Firebase Config - Uses environment variables
 // Set these in .env.local based on .env.example
@@ -11,19 +11,18 @@ const firebaseConfig = {
   storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
   messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
   appId: import.meta.env.VITE_FIREBASE_APP_ID,
-  databaseURL: import.meta.env.VITE_FIREBASE_DATABASE_URL,
 };
 
 // Initialize Firebase
-let app, database;
+let app, db;
 
 try {
   app = initializeApp(firebaseConfig);
-  database = getDatabase(app);
-  console.log('Firebase initialized successfully');
+  db = getFirestore(app);
+  console.log('Firebase initialized successfully with Firestore');
 } catch (error) {
   console.error('Firebase initialization error:', error);
   // Firebase will be unavailable if config is not set
 }
 
-export { app, database };
+export { app, db };

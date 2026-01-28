@@ -1,34 +1,45 @@
-// Database Service - Handles all Firebase Realtime Database operations
-import { database } from './firebase';
-import { ref, push, query, orderByChild, limitToLast, get, child } from 'firebase/database';
+// Database Service - Handles all Firestore operations
+import {
+  db,
+} from './firebase';
+import {
+  collection,
+  addDoc,
+  query,
+  getDocs,
+  where,
+  orderBy,
+  limit,
+  getCountFromServer,
+} from 'firebase/firestore';
 
 /**
- * Save email to beta signup list
+ * Save email to beta signup list in Firestore
  * @param {string} email - Email address to save
  * @param {string} name - Optional name field
  * @returns {Promise<boolean>} - Success status
  */
 export async function saveBetaSignup(email, name = '') {
   try {
-    if (!database) {
-      console.error('Database not initialized. Check Firebase configuration.');
+    if (!db) {
+      console.error('Firestore not initialized. Check Firebase configuration.');
       return false;
     }
 
-    // Reference to beta signups in database
-    const signupsRef = ref(database, 'beta_signups');
+    // Reference to beta_signups collection
+    const signupsCollection = collection(db, 'beta_signups');
 
     // Data to save
     const signupData = {
       email: email.toLowerCase().trim(),
       name: name.trim(),
       timestamp: new Date().toISOString(),
-      createdAt: Date.now(),
+      createdAt: new Date(),
     };
 
-    // Push to Firebase (will generate unique ID)
-    await push(signupsRef, signupData);
-    console.log('Beta signup saved successfully:', email);
+    // Add document to Firestore
+    const docRef = await addDoc(signupsCollection, signupData);
+    console.log('Beta signup saved successfully:', email, 'DocID:', docRef.id);
     return true;
   } catch (error) {
     console.error('Error saving beta signup:', error);
@@ -42,20 +53,15 @@ export async function saveBetaSignup(email, name = '') {
  */
 export async function getBetaSignupCount() {
   try {
-    if (!database) {
-      console.warn('Database not initialized. Returning 0.');
+    if (!db) {
+      console.warn('Firestore not initialized. Returning 0.');
       return 0;
     }
 
-    const signupsRef = ref(database, 'beta_signups');
-    const snapshot = await get(signupsRef);
+    const signupsCollection = collection(db, 'beta_signups');
+    const snapshot = await getCountFromServer(signupsCollection);
 
-    if (snapshot.exists()) {
-      const data = snapshot.val();
-      return Object.keys(data).length;
-    }
-
-    return 0;
+    return snapshot.data().count;
   } catch (error) {
     console.error('Error fetching beta signup count:', error);
     return 0;
@@ -64,30 +70,34 @@ export async function getBetaSignupCount() {
 
 /**
  * Get recent beta signups (for admin dashboard)
- * @param {number} limit - Number of signups to retrieve
+ * @param {number} limitCount - Number of signups to retrieve
  * @returns {Promise<Array>} - Array of signup objects
  */
-export async function getRecentSignups(limit = 10) {
+export async function getRecentSignups(limitCount = 10) {
   try {
-    if (!database) {
-      console.warn('Database not initialized.');
+    if (!db) {
+      console.warn('Firestore not initialized.');
       return [];
     }
 
-    const signupsRef = ref(database, 'beta_signups');
-    const recentQuery = query(signupsRef, orderByChild('createdAt'), limitToLast(limit));
+    const signupsCollection = collection(db, 'beta_signups');
+    const q = query(
+      signupsCollection,
+      orderBy('createdAt', 'desc'),
+      limit(limitCount)
+    );
 
-    const snapshot = await get(recentQuery);
+    const snapshot = await getDocs(q);
+    const signups = [];
 
-    if (snapshot.exists()) {
-      const data = snapshot.val();
-      return Object.entries(data).reverse().map(([id, value]) => ({
-        id,
-        ...value,
-      }));
-    }
+    snapshot.forEach((doc) => {
+      signups.push({
+        id: doc.id,
+        ...doc.data(),
+      });
+    });
 
-    return [];
+    return signups;
   } catch (error) {
     console.error('Error fetching recent signups:', error);
     return [];
@@ -101,22 +111,18 @@ export async function getRecentSignups(limit = 10) {
  */
 export async function isEmailExists(email) {
   try {
-    if (!database) {
-      console.warn('Database not initialized.');
+    if (!db) {
+      console.warn('Firestore not initialized.');
       return false;
     }
 
-    const signupsRef = ref(database, 'beta_signups');
-    const snapshot = await get(signupsRef);
+    const signupsCollection = collection(db, 'beta_signups');
+    const emailLower = email.toLowerCase().trim();
 
-    if (snapshot.exists()) {
-      const data = snapshot.val();
-      const emailLower = email.toLowerCase().trim();
+    const q = query(signupsCollection, where('email', '==', emailLower));
+    const snapshot = await getDocs(q);
 
-      return Object.values(data).some((signup) => signup.email === emailLower);
-    }
-
-    return false;
+    return !snapshot.empty;
   } catch (error) {
     console.error('Error checking email existence:', error);
     return false;
