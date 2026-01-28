@@ -74,7 +74,7 @@ export default function ForParentsSection() {
           </div>
 
           {/* Additional Context */}
-          <div className="mt-12 sm:mt-16 bg-secondary-50 rounded-2xl p-8 sm:p-10">
+          <div className="mt-12 sm:mt-16 bg-neutral-50 border-2 border-neutral-200 rounded-2xl p-8 sm:p-10">
             <p className="text-center text-neutral-700 text-base sm:text-lg">
               부모님은 아이의 성장을 숫자가 아닌 의미로 이해하게 됩니다.
               <br className="hidden sm:block" />

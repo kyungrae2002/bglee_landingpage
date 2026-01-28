@@ -56,7 +56,7 @@ export default function ToysNFCSection() {
           </div>
 
           {/* Conclusion */}
-          <div className="bg-gradient-to-r from-secondary-50 to-accent-50 rounded-2xl p-8 sm:p-10 border-2 border-secondary-200">
+          <div className="bg-neutral-50 border-2 border-neutral-200 rounded-2xl p-8 sm:p-10">
             <p className="text-center text-2xl sm:text-3xl font-bold text-neutral-900">
               장난감을 바꾸지 않고,<br className="sm:hidden" />
               <span className="text-secondary-600"> 놀이의 흐름만 설계합니다</span>

@@ -11,7 +11,7 @@ export default function ContinuityWithTherapySection() {
           </h2>
 
           {/* Main Message */}
-          <div className="bg-gradient-to-r from-primary-50 to-secondary-50 rounded-2xl p-8 sm:p-10 mb-12 sm:mb-16">
+          <div className="bg-neutral-50 border-2 border-neutral-200 rounded-2xl p-8 sm:p-10 mb-12 sm:mb-16">
             <div className="space-y-6">
               <h3 className="text-h3 text-neutral-900">
                 대신에, 이것을 합니다
@@ -61,7 +61,7 @@ export default function ContinuityWithTherapySection() {
           </div>
 
           {/* Recommendation */}
-          <div className="mt-12 sm:mt-16 bg-secondary-50 rounded-2xl p-8 sm:p-10">
+          <div className="mt-12 sm:mt-16 bg-neutral-50 border-2 border-neutral-200 rounded-2xl p-8 sm:p-10">
             <p className="text-center text-base sm:text-lg text-neutral-800">
               현재 언어재활을 받고 있는 아이들을 위해 특별히 설계되었습니다.
               <br className="hidden sm:block" />

@@ -49,8 +49,7 @@ export default function ProblemSection() {
           </div>
 
           {/* Expert Quote */}
-          <div className="bg-gradient-to-r from-primary-50 to-secondary-50
-           border-l-4 border-primary-100 rounded-lg p-8 sm:p-10">
+          <div className="bg-neutral-50 border-2 border-neutral-200 rounded-2xl p-8 sm:p-10">
             <div className="space-y-4">
               <p className="text-lg sm:text-xl text-neutral-900 italic font-medium">
                 "부모가 안 하는 게 아니라, 구체적인 방법이 없어서 못 이어가는 경우가 대부분입니다."

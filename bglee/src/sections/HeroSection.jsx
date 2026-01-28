@@ -69,8 +69,8 @@ export default function HeroSection() {
               <div className="relative flex flex-col items-center justify-center">
                 {/* Image with subtle glow */}
                 <div className="relative mb-6">
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary-300/30 to-secondary-300/30 rounded-full blur-2xl" />
-                  <div className="relative w-56 h-56 rounded-full flex items-center justify-center backdrop-blur-sm bg-white/30 border border-white/50 shadow-2xl">
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary-300/30 to-secondary-300/30 blur-3xl opacity-40" />
+                  <div className="relative">
                     <img src="/dog.svg" alt="Bglee" className="w-48 h-48 object-contain" />
                   </div>
                 </div>

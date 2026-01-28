@@ -76,19 +76,8 @@ export default function ExperienceFlowSection() {
           ))}
         </div>
 
-        {/* Flow Arrows (Desktop only) */}
-        <div className="hidden lg:flex justify-center items-center gap-2 mb-12 sm:mb-16 text-neutral-400 text-xl">
-          <div className="w-8 h-0.5 bg-neutral-300" />
-          <span>→</span>
-          <div className="w-8 h-0.5 bg-neutral-300" />
-          <span>→</span>
-          <div className="w-8 h-0.5 bg-neutral-300" />
-          <span>→</span>
-          <div className="w-8 h-0.5 bg-neutral-300" />
-        </div>
-
         {/* Emphasis Section */}
-        <div className="bg-gradient-to-r from-primary-50 to-secondary-50 rounded-2xl p-8 sm:p-10 text-center">
+        <div className="bg-neutral-50 border-2 border-neutral-200 rounded-2xl p-8 sm:p-10 text-center">
           <p className="text-2xl sm:text-3xl font-bold text-neutral-900 mb-4">
              한 세트 2~3분,<br className="sm:hidden" /> 하루 한두 번이면 충분합니다
           </p>
