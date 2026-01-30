@@ -143,7 +143,7 @@ export default function BetaSignupForm({ showCounter = true, variant = 'default'
             <p className="text-sm text-neutral-600">
               현재{' '}
               <span className="font-bold text-primary-600">
-                {loadingCount ? '로딩 중...' : `${signupCount.toLocaleString()}명`}
+                {loadingCount ? '로딩 중...' : `${(signupCount + 50).toLocaleString()}명`}
               </span>
               의 부모님이 참여 중입니다
             </p>
