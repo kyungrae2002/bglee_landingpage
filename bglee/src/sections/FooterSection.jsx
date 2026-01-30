@@ -17,79 +17,8 @@ export default function FooterSection() {
             </p>
           </div>
 
-          {/* Product Links */}
-          <div className="space-y-4">
-            <h4 className="font-semibold text-white text-sm uppercase tracking-wide">
-              제품
-            </h4>
-            <ul className="space-y-2 text-sm text-neutral-400">
-              <li>
-                <a href="#features" className="hover:text-neutral-200 transition-colors">
-                  기능 소개
-                </a>
-              </li>
-              <li>
-                <a href="#how-it-works" className="hover:text-neutral-200 transition-colors">
-                  사용 방법
-                </a>
-              </li>
-              <li>
-                <a href="#pricing" className="hover:text-neutral-200 transition-colors">
-                  가격 안내
-                </a>
-              </li>
-            </ul>
           </div>
-
-          {/* Company Links */}
-          <div className="space-y-4">
-            <h4 className="font-semibold text-white text-sm uppercase tracking-wide">
-              회사
-            </h4>
-            <ul className="space-y-2 text-sm text-neutral-400">
-              <li>
-                <a href="#about" className="hover:text-neutral-200 transition-colors">
-                  소개
-                </a>
-              </li>
-              <li>
-                <a href="#blog" className="hover:text-neutral-200 transition-colors">
-                  블로그
-                </a>
-              </li>
-              <li>
-                <a href="#contact" className="hover:text-neutral-200 transition-colors">
-                  문의
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Legal Links */}
-          <div className="space-y-4">
-            <h4 className="font-semibold text-white text-sm uppercase tracking-wide">
-              정책
-            </h4>
-            <ul className="space-y-2 text-sm text-neutral-400">
-              <li>
-                <a href="#privacy" className="hover:text-neutral-200 transition-colors">
-                  개인정보 처리방침
-                </a>
-              </li>
-              <li>
-                <a href="#terms" className="hover:text-neutral-200 transition-colors">
-                  이용약관
-                </a>
-              </li>
-              <li>
-                <a href="#disclaimer" className="hover:text-neutral-200 transition-colors">
-                  면책 사항
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
+          
         {/* Divider */}
         <div className="border-t border-neutral-700 my-12 sm:my-16" />
 
