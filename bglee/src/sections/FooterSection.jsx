@@ -18,7 +18,7 @@ export default function FooterSection() {
           </div>
 
           </div>
-          
+
         {/* Divider */}
         <div className="border-t border-neutral-700 my-12 sm:my-16" />
 
@@ -39,7 +39,7 @@ export default function FooterSection() {
           <div className="grid sm:grid-cols-3 gap-6 text-sm">
             <div>
               <p className="text-neutral-400">📧 Email</p>
-              <p className="text-neutral-200 font-medium">exionstudio@gmail.com</p>
+              <p className="text-neutral-200 font-medium">exionstudio.official@gmail.com</p>
             </div>
             <div>
               <p className="text-neutral-400">🌐 Website</p>
