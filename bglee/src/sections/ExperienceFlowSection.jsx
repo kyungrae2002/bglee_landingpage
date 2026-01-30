@@ -29,14 +29,14 @@ export default function ExperienceFlowSection() {
   ];
 
   return (
-    <section className="section-padding bg-white">
+    <section className="section-padding">
       <div className="section-container">
         {/* Section Title */}
         <h2 className="text-h2 text-neutral-900 mb-4 text-center">
-          Bglee의 언어 놀이는 이렇게 진행됩니다
+          바쁜 부모도 매일 할 수 있는 방법
         </h2>
         <p className="text-center text-lg sm:text-xl text-neutral-600 mb-12 sm:mb-16">
-          찾기 → 태그 → 문장 → 상황극
+          집에 있는 장난감 + 스티커 하나면 오늘부터 바로 시작할 수 있어요
         </p>
 
         {/* Steps Grid */}
@@ -75,7 +75,6 @@ export default function ExperienceFlowSection() {
             </div>
           ))}
         </div>
-
         {/* Emphasis Section */}
         <div className="bg-neutral-50 border-2 border-neutral-200 rounded-2xl p-8 sm:p-10 text-center">
           <p className="text-2xl sm:text-3xl font-bold text-neutral-900 mb-4">

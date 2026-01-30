@@ -2,26 +2,26 @@ import React from 'react';
 
 export default function ProblemSection() {
   return (
-    <section className="section-padding bg-white">
+    <section className="section-padding bg-[#f7f7f7]">
       <div className="section-container">
         <div className="max-w-4xl mx-auto">
           {/* Section Title */}
           <h2 className="text-h2 text-neutral-900 mb-12 sm:mb-16 text-center">
-            치료는 이어지는데,<br className="hidden sm:block" /> 집에서는 멈춥니다
+            이런 고민,<br className="hidden sm:block" /> 부모님이라면 누구나 합니다
           </h2>
 
           {/* Problem Grid */}
-          <div className="grid sm:grid-cols-2 gap-8 sm:gap-10 mb-12 sm:mb-16">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 mb-12 sm:mb-16">
             {/* Problem 1 */}
             <div className="card p-6 sm:p-8 space-y-4">
               <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center text-2xl">
                 1
               </div>
-              <h3 className="text-h4 text-neutral-900">
-                막막한 부모의 고민
+              <h3 className="text-lg font-semibold text-neutral-900">
+                "주 2회 센터, 나머지는?"
               </h3>
               <p className="text-body text-neutral-700 leading-relaxed">
-                언어치료는 주 1~2회, 나머지 요일은 집에서 보내지만 어떻게 말놀이를 해야 할지 막막합니다.
+                골든타임은 6세 전까지인데 <br />일주일에 고작 2시간으로 충분할까요?
               </p>
             </div>
 
@@ -30,11 +30,23 @@ export default function ProblemSection() {
               <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center text-2xl">
                 2
               </div>
-              <h3 className="text-h4 text-neutral-900">
-                도구와 방법의 불일치
+              <h3 className="text-lg font-semibold text-neutral-900">
+                "교구는 쌓이는데..."
               </h3>
               <p className="text-body text-neutral-700 leading-relaxed">
-                교구와 장난감은 많은데 놀이가 언어 자극으로 이어지지 않습니다.
+                책도 사고, 교구도 샀지만<br />구체적으로 뭘 어떻게 해야 할지 막막해요.
+              </p>
+            </div>
+            {/* Problem 3 */}
+            <div className="card p-6 sm:p-8 space-y-4">
+              <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center text-2xl">
+                3
+              </div>
+              <h3 className="text-lg font-semibold text-neutral-900">
+                "바빠서 매일은 무리예요"
+              </h3>
+              <p className="text-body text-neutral-700 leading-relaxed">
+                매번 새로운 놀이를 준비하고<br />아이 반응 보며 즉흥적으로 가르치기엔 너무 힘들어요.
               </p>
             </div>
           </div>

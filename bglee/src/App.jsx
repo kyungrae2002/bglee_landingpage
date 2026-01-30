@@ -7,12 +7,6 @@ import HeroSection from './sections/HeroSection';
 import ProblemSection from './sections/ProblemSection';
 import SolutionOverviewSection from './sections/SolutionOverviewSection';
 import ExperienceFlowSection from './sections/ExperienceFlowSection';
-import WhyItWorksSection from './sections/WhyItWorksSection';
-import ToysNFCSection from './sections/ToysNFCSection';
-import ForParentsSection from './sections/ForParentsSection';
-import ContinuityWithTherapySection from './sections/ContinuityWithTherapySection';
-import BrandPhilosophySection from './sections/BrandPhilosophySection';
-import CTASection from './sections/CTASection';
 import FooterSection from './sections/FooterSection';
 
 // Import admin dashboard
@@ -55,19 +49,13 @@ function HomePage() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white overflow-hidden">
+    <div className="min-h-screen bg-[#f7f7f7] overflow-hidden">
       {/* Main Content */}
       <main>
         <HeroSection />
         <ProblemSection />
-        <SolutionOverviewSection />
         <ExperienceFlowSection />
-        <WhyItWorksSection />
-        <ToysNFCSection />
-        <ForParentsSection />
-        <ContinuityWithTherapySection />
-        <BrandPhilosophySection />
-        <CTASection />
+        <SolutionOverviewSection />
       </main>
 
       {/* Footer */}
@@ -131,7 +119,7 @@ function BackToTopButton() {
   );
 }
 
-function App() {
+export default function App() {
   return (
     <Router>
       <Routes>
@@ -148,4 +136,3 @@ function App() {
   );
 }
 
-export default App;
