@@ -50,7 +50,7 @@ function HomePage() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#f7f7f7] overflow-hidden">
+    <div className="min-h-screen bg-[white] overflow-hidden">
       {/* Main Content */}
       <main>
         <HeroSection />

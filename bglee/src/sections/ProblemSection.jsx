@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function ProblemSection() {
   return (
-    <section className="section-padding bg-[#f7f7f7]">
+    <section className="section-padding">
       <div className="section-container">
         <div className="max-w-4xl mx-auto">
           {/* Section Title */}
