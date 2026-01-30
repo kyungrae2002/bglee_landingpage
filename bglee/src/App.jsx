@@ -8,6 +8,7 @@ import ProblemSection from './sections/ProblemSection';
 import SolutionOverviewSection from './sections/SolutionOverviewSection';
 import ExperienceFlowSection from './sections/ExperienceFlowSection';
 import FooterSection from './sections/FooterSection';
+import CTASection from './sections/CTASection';
 
 // Import admin dashboard
 import ExionDashboard from './pages/ExionDashboard';
@@ -56,6 +57,7 @@ function HomePage() {
         <ProblemSection />
         <ExperienceFlowSection />
         <SolutionOverviewSection />
+        <CTASection />
       </main>
 
       {/* Footer */}
