@@ -23,7 +23,7 @@ export default function FooterSection() {
         <div className="border-t border-neutral-700 my-12 sm:my-16" />
 
         {/* Legal Disclaimer */}
-        <div className="bg-neutral-800 rounded-lg p-6 sm:p-8 mb-12 sm:mb-16">
+        <div className=" sm:p-8 mb-12 sm:mb-16">
           <h4 className="font-semibold text-white text-sm mb-4"> 법적 공지</h4>
           <p className="text-sm text-neutral-300 leading-relaxed">
             Bglee는 의료기기나 치료 서비스를 대체하지 않으며,
